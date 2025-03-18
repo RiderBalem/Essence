@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gentlemen's Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#tasks">Tasks</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#settings">Settings</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <header>
+            <h1>Gentlemen's Agenda</h1>
+            <p class="tagline">"Style, Power, and Precision."</p>
+        </header>
+        <main>
+            <div class="visuals">
+                <img src="suits.jpg" alt="Sharp-dressed men" class="suits">
+                <img src="car.jpg" alt="Luxury car" class="car">
+                <img src="gangsters.jpg" alt="The Crew" class="gangsters">
+            </div>
+            <div class="task-input">
+                <input type="text" id="task" placeholder="Enter Task...">
+                <input type="date" id="date">
+                <select id="tag">
+                    <option value="Business">Business</option>
+                    <option value="Personal">Personal</option>
+                    <option value="Finance">Finance</option>
+                </select>
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="task-list"></ul>
+        </main>
+    </div>
+</body>
+</html>
